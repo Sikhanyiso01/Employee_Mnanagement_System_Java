@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Welcome, ${name}!</h1>
-    <a href="Login.jsp">Logout</a>
+    <div class="page-container">
+        <h1>Welcome, ${name}!</h1>
+        <a href="Login.jsp" class="btn-link">Logout</a>
+        <button onclick="history.back()">Back</button>
+    </div>
 </body>
 </html>

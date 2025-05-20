@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="LoginServlet" method="post">
-        Employee ID: <input type="text" name="employee_id"><br>
-        Password: <input type="password" name="password"><br>
-        <input type="submit" value="Login">
-    </form>
-    ${errorMessage}
+    <div class="page-container">
+        <h1>Login</h1>
+        <form action="LoginServlet" method="post">
+            <input type="text" name="employee_id" placeholder="Employee ID"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="submit" value="Login">
+        </form>
+        <div class="error-message">${errorMessage}</div>
+        <button onclick="history.back()">Back</button>
+    </div>
 </body>
 </html>
